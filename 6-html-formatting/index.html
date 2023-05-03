@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html formatting - Format some Text</title>
+    <style>
+      #bold-text:hover::before {
+        content: "Bold-text";
+        font-size: 14px;
+        color: red;
+        position: absolute;
+        top: -1.5rem;
+        padding: 5px 10px;
+        background-color: lightgrey;
+      }
+    </style>
   </head>
   <body>
     <div class="container" style="max-width: 80%; margin: auto">
@@ -17,6 +28,19 @@
           background-color: darkblue;
         "
       />
+      <section style="padding: 0.5rem; background-color: rgb(212, 247, 247)">
+        <h2 style="color: brown; text-decoration: underline; font-size: 1.8rem">
+          Bold text
+        </h2>
+        <div class="content" style="position: relative">
+          <p style="line-height: 1.6; font-size: 1.3rem">
+            <b id="bold-text" title="Bold Text">Lorem</b> ipsum dolor sit amet,
+            consectetur adipisicing elit. Ducimus earum ipsa eaque id, corrupti
+            magnam ex? Animi neque sunt pariatur, dignissimos voluptatum fuga,
+            quasi, iure debitis itaque earum maxime repellat?
+          </p>
+        </div>
+      </section>
     </div>
   </body>
 </html>
