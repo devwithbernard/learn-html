@@ -15,6 +15,16 @@
         padding: 5px 10px;
         background-color: lightgrey;
       }
+
+      #strong-text:hover::before {
+        content: "Important text";
+        font-size: 14px;
+        color: green;
+        position: absolute;
+        top: -1.5rem;
+        padding: 5px 10px;
+        background-color: lightcyan;
+      }
     </style>
   </head>
   <body>
@@ -28,7 +38,13 @@
           background-color: darkblue;
         "
       />
-      <section style="padding: 0.5rem; background-color: rgb(212, 247, 247)">
+      <section
+        style="
+          padding: 0.5rem;
+          margin-top: 1rem;
+          background-color: rgb(212, 247, 247);
+        "
+      >
         <h2 style="color: brown; text-decoration: underline; font-size: 1.8rem">
           Bold text
         </h2>
@@ -38,6 +54,21 @@
             consectetur adipisicing elit. Ducimus earum ipsa eaque id, corrupti
             magnam ex? Animi neque sunt pariatur, dignissimos voluptatum fuga,
             quasi, iure debitis itaque earum maxime repellat?
+          </p>
+        </div>
+      </section>
+      <section
+        style="padding: 0.5rem; background-color: lightyellow; margin-top: 1rem"
+      >
+        <h2 style="color: darkblue">Strong text or important text</h2>
+        <div class="content" style="position: relative; margin-top: 1rem">
+          <p style="line-height: 1.6; font-size: 1.3rem">
+            <strong id="strong-text" title="Important text"
+              >Loremi psum dolor sit amet</strong
+            >
+            , consectetur adipisicing elit. Ducimus earum ipsa eaque id,
+            corrupti magnam ex? Animi neque sunt pariatur, dignissimos
+            voluptatum fuga, quasi, iure debitis itaque earum maxime repellat?
           </p>
         </div>
       </section>
