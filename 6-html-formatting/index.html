@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html formatting - Format some Text</title>
     <style>
+      *{
+        font-family: Arial, sans-serif
+      }
       #bold-text:hover::before {
         content: "Bold-text";
         font-size: 14px;
@@ -24,6 +27,16 @@
         top: -1.5rem;
         padding: 5px 10px;
         background-color: lightcyan;
+      }
+
+      #italic-text:hover::before{
+        content: "Italic text";
+        font-size: 18px;
+        color: blue;
+        position: absolute;
+        top: -1.5rem;
+        padding: 5px 10px;
+        background-color: lightgray;
       }
     </style>
   </head>
@@ -60,7 +73,7 @@
       <section
         style="padding: 0.5rem; background-color: lightyellow; margin-top: 1rem"
       >
-        <h2 style="color: darkblue">Strong text or important text</h2>
+        <h2 style="color: darkblue; font-size: 1.8rem">Strong text or important text</h2>
         <div class="content" style="position: relative; margin-top: 1rem">
           <p style="line-height: 1.6; font-size: 1.3rem">
             <strong id="strong-text" title="Important text"
@@ -70,6 +83,21 @@
             corrupti magnam ex? Animi neque sunt pariatur, dignissimos
             voluptatum fuga, quasi, iure debitis itaque earum maxime repellat?
           </p>
+        </div>
+      </section>
+      <section style="background-color: lightpink;padding: 0.5rem;margin-top: 1rem;border-radius: 5px">
+        <h2 style="color: darkblue">Italic Text</h2>
+        <div class="content" style="position: relative;margin-top: 1rem">
+            <p style="line-height: 1.6; font-size: 1.3rem"> <i id="italic-text"
+                    style="color: red; background-color: black; padding: 5px
+                    10px">Lorem
+              ipsum
+              dolor
+              sit amet,
+              consectetur
+              adipisicing elit.</i>
+              Cumque eligendi eos iusto quo tempore vitae.
+              Blanditiis consequuntur dicta laudantium. Aperiam delectus, ducimus eveniet iusto laboriosam nostrum quaerat quis rerum veniam?</p>
         </div>
       </section>
     </div>
