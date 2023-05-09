@@ -1,0 +1,102 @@
+*,::before,::after{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    max-width: 80%;
+    margin: 10px auto;
+}
+
+.container .title{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.container p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.section{
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: lightcyan;
+    border-radius: 10px;
+}
+
+.section__title{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.section__description{
+    margin-bottom: 0.5rem;
+}
+
+.section__colors{
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__colors__item{
+    flex: calc(25% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* section content */
+.section__content{
+    padding: 1rem;
+}
+
+.section__content__item{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section__content__item:nth-child(1){
+    text-align: center;
+}
+
+.section__content__item:nth-child(2){
+    text-align: left;
+    padding: 1rem;
+}
+
+.section__content > div{
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section__content--border__color{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.section__content--border__color div{
+    padding: 1rem;
+    border-width: 5px;
+    border-style: solid;
+    text-align: center;
+}
+
+.section__content--border__color div:nth-child(1){
+    border-color: #6d036d;
+}
+
+.section__content--border__color div:nth-child(2){
+    border-color: lightcoral;
+}
+
+.section__content--border__color div:nth-child(3){
+    border-color: darkblue;
+}
