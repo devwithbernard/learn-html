@@ -1,19 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
     <title>html links</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="main">
-            <h1 class="main__title">HTML Links</h1>
-            <p class="main__description">inks are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+      <div class="navbar">
+        <div class="navbar__fragment">
+          <nav class="navbar__nav">
+            <a href="#home" class="navbar__nav__link"
+              ><i data-feather="home"></i
+            ></a>
+            <a href="#html" class="navbar__nav__link isActiveLink">HTML</a>
+            <a href="#css" class="navbar__nav__link">CSS</a>
+            <a href="#javascript" class="navbar__nav__link">Javascript</a>
+            <a href="#python" class="navbar__nav__link">Python</a>
+            <a href="#java" class="navbar__nav__link">Java</a>
+            <a href="#php" class="navbar__nav__link">PhP</a>
+          </nav>
         </div>
+      </div>
+      <div class="main">
+        <h1 class="main__title">HTML Links</h1>
+        <p class="main__description">
+          inks are found in nearly all web pages. Links allow users to click
+          their way from page to page.
+        </p>
+        <section class="section">
+          <h1>HTML LINKS</h1>
+          <div class="links">
+            <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools.com</a>
+          </div>
+        </section>
+        <section class="section">
+          <h1>HTLM LINKS - The target attributes</h1>
+          <div class="links grid">
+            <div class="grid-item red">
+              <a href="https://www.w3schools.com/" style="color: white" target="_blank">_blank</a>
+            </div>
+            <div class="grid-item yellow">
+              <a href="https://www.w3schools.com/" style="color: black" target="_parent">_parent</a>
+            </div>
+            <div class="grid-item green">
+              <a href="https://www.w3schools.com/" style="color:white" target="_self">_self</a>
+            </div>
+            <div class="grid-item blue">
+              <a href="https://www.w3schools.com/" style="color:white" target="_top">_top</a>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <h1>HTML LINKS - Colors</h1>
+          <div class="links grid">
+            <a href="#" class="grid-item link-link">a:link</a>
+            <a href="#" class="grid-item link-visited">a:visited</a>
+            <a href="#" class="grid-item link-hover">a:hover</a>
+            <a href="#" class="grid-item link-active">a:active</a>
+          </div>
+        </section>
+      </div>
     </div>
-</body>
+    <!-- feather icons pack -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script defer>
+      /* Loading svg icons */
+      feather.replace();
+
+      document.addEventListener("DOMContentLoaded",()=>{
+        const allLinks = document.querySelectorAll('.links a');
+        const allNavLinks = document.querySelectorAll('.navbar__nav a');
+
+        allLinks.forEach(link =>{
+          link.addEventListener('mouseover',()=>{
+            link.classList.add("green")
+          })
+          link.addEventListener('mouseleave',()=>{
+            const isContainsRedClass = link.classList.contains("green")
+            isContainsRedClass && link.classList.remove("green");
+          })
+        })
+
+        allNavLinks.forEach(navLink =>{
+          navLink.addEventListener("click",(event)=>{
+            console.log("Click me")
+            event.preventDefault();
+            if(navLink.classList.contains('isActiveLink')){
+              return null;
+            }else{
+              allNavLinks.forEach(navLink => {
+                navLink.classList.remove("isActiveLink")
+              })
+              navLink.classList.add("isActiveLink")
+            }
+          })
+        })
+      })
+    </script>
+  </body>
 </html>
