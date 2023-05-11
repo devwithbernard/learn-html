@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Images</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h1>HTML Images</h1>
+            <p>Images can improve the design of websites.</p>
+            <div class="images-gallery" >
+                <img src="./assets/img-1.jpg" alt="images">
+                <img src="./assets/img-2.jpg" alt="images">
+                <img src="./assets/img-3.jpg" alt="images">
+        </section>
+        </div>
+    </div>
+<script defer>
+    document.addEventListener('DOMContentLoaded', event =>{
+        event.preventDefault();
+
+        const allGalleryImages = document.querySelectorAll(".images-gallery img");
+        allGalleryImages.forEach(image =>{
+            image.addEventListener('mouseover',event =>{
+                if(image.classList.contains("img-mouseover")){
+                    return null;
+                }else{
+                    allGalleryImages.forEach(img =>{
+                        img.classList.remove('img-mouseover');
+                        img.classList.add('img-mouseleave');
+                    })
+                    image.classList.remove("img-mouseleave")
+                    image.classList.toggle("img-mouseover")
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html>
