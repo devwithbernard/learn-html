@@ -1,0 +1,128 @@
+:root{
+    --pink: #a84ba8;
+    --dark-gray:#282828;
+    --violet: #5959a9;
+    --black: #131518;
+    --light-gray: #ddd;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--black);
+}
+
+.container{
+    max-width: 70%;
+    width: 40%;
+    padding: 10px 1rem;
+    margin: auto;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: var(--pink);
+    border-radius: 50%;
+
+}
+
+.list-container{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    background-color: var(--light-gray);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.list-container-title{
+    color: var(--violet);
+    margin-bottom: 1rem;
+}
+
+.list-item{
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+}
+
+.list-item{
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.content-item{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.content-item:nth-child(1){
+    border-left: 1px solid black;
+}
+
+.content-item h2{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.circle-marker{
+    list-style-type: circle;
+}
+
+.square-marker{
+    list-style-type: square;
+}
+
+.none-marker{
+    list-style-type: none;
+}
+
+.list-item ul{
+    margin-left: 1rem;
+}
+
+.list-item ul li{
+    font-weight: bolder;
+    color: var(--violet);
+    font-size: 1rem;
+    line-height: 1.6;
+    list-style-type: square;
+}
+
+/* navbar */
+.navbar{
+    margin: 10px 0;
+    width: 100%;
+    background-color: var(--dark-gray);
+    padding: 0;
+    overflow: hidden;
+}
+
+li.navbar-item{
+    float: left;
+    list-style-type: none;
+    padding: 16px 2rem;
+    transition: 200ms background-color ease-in-out;
+}
+
+a.navbar-link{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 200ms color ease-in-out;
+}
+
+li.navbar-item:hover{
+    background-color: var(--black);
+}
+
+li.navbar-item:hover a{
+    color: darkred;
+}
