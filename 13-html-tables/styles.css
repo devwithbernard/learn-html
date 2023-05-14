@@ -1,0 +1,40 @@
+table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: "Cascadia Code", sans-serif;
+    margin: 2rem auto;
+}
+
+.no-border{
+    border: none;
+}
+
+.th-first td{
+    text-align: center;
+    font-weight: bold;
+}
+
+.th-first .no-border{
+    background: linear-gradient(-45deg, lightgray 25%, #aaa 25%, #bbb 50%, #ccc 50%, #ddd 75%, #eee 75%, #111);
+    background-size:6px 6px;
+}
+
+.th-first td:nth-child(4),.th-first td:nth-child(7){
+    background-color: lightskyblue;
+}
+
+.th-second td{
+    text-align: left;
+    padding: 3px 8px;
+    color: darkblue;
+    font-weight: 500;
+    background-color: lightcoral;
+}
+
+tbody tr{
+    font-family: "JetBrains Mono", sans-serif;
+}
+
+tbody tr td{
+    padding: 3px 8px;
+}
