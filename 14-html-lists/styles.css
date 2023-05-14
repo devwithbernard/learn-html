@@ -1,0 +1,37 @@
+.container{
+    max-width: 80vw;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.container > h1{
+    color: darkviolet;
+    margin-bottom: 0.5rem;
+}
+
+hr.hr-line{
+    height: 2px;
+    border:none;
+    background-color: darkgray;
+    max-width: inherit;
+}
+
+/* unordered-list */
+.list-container{
+    margin-left: 2rem;
+}
+
+.list-container p{
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.list__item{
+    line-height: 1.6;
+    list-style-type: circle;
+    font-size: 1.1rem;
+}
+
+.ordered-list .list__item{
+    list-style-type: decimal-leading-zero;
+}
