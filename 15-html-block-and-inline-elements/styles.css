@@ -1,0 +1,55 @@
+* {
+  box-sizing: border;
+  font-family: Arial, serif;
+}
+
+.container {
+  max-width: 60%;
+  width: calc(60% - 2rem);
+  margin: 10px auto;
+}
+
+.element {
+  margin-bottom: 1rem;
+}
+
+.element-title {
+  font-size: 1.6rem;
+  color: green;
+}
+
+.element-block {
+  font-size: 1.1rem;
+  border: 1px solid green;
+  padding: 10px;
+}
+
+.block-list,
+.inline-list {
+  font-size: 1.1rem;
+  border-left: 5px solid green;
+  padding-left: 1rem;
+}
+
+.block-list img,
+.inline-list img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: darkblue;
+}
+
+.element-inline span {
+  font-size: 1.1rem;
+  padding: 10px;
+  border: 1px solid green;
+}
+
+.inline-list {
+  margin-top: 1.6rem;
+}
