@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 70%;
+    width: 60%;
+    margin: auto;
+    padding: 1rem;
+    background-color: lightgrey;
+}
+
+.list-container{
+    margin-bottom: 1rem;
+}
+
+.list-container hr{
+    border:none;
+    background-color: #544887;
+    height: 2px;
+}
+
+.list-item{
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
