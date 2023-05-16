@@ -1,0 +1,77 @@
+:root {
+  --green: #008000;
+  --white: white;
+  --black: #222;
+  --font-family: Arial, sans-serif;
+  --font-size: 1rem;
+  --margin: 1rem;
+  --padding: 1rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  --font-size: 1.2rem;
+
+  max-width: 40%;
+  width: 40%;
+  padding: var(--padding);
+  margin: auto;
+  font-size: var(--font-size);
+}
+
+.container .main-title {
+  --font-size: 1.8rem;
+
+  color: var(--green);
+  font-size: var(--font-size);
+}
+
+.html-form {
+  margin: var(--margin) 0;
+}
+
+.form {
+  padding: var(--padding);
+  width: 80%;
+}
+
+.form-element {
+  margin: calc(var(--margin) * 1.6) 0;
+}
+
+.form-element label {
+  display: block;
+}
+
+.form-element input {
+  width: 80%;
+  overflow: hidden;
+  padding: 5px var(--padding);
+  font-size: var(--font-size);
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid var(--black);
+  transition: width 0.5s ease-in-out;
+}
+
+.form-element input:focus {
+  width: 100%;
+  border-color: var(--green);
+}
+
+.submit-btn {
+  padding: 10px var(--padding);
+  border: none;
+  background-color: var(--green);
+  color: var(--white);
+  width: 80%;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+}
