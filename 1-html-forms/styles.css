@@ -19,8 +19,7 @@
 .container {
   --font-size: 1.2rem;
 
-  max-width: 40%;
-  width: 40%;
+min-width: 60%;
   padding: var(--padding);
   margin: auto;
   font-size: var(--font-size);
@@ -39,7 +38,7 @@
 
 .form {
   padding: var(--padding);
-  width: 80%;
+  width: 100%;
 }
 
 .form-element {
@@ -51,7 +50,7 @@
 }
 
 .form-element input {
-  width: 80%;
+  width: 60%;
   overflow: hidden;
   padding: 5px var(--padding);
   font-size: var(--font-size);
@@ -71,7 +70,55 @@
   border: none;
   background-color: var(--green);
   color: var(--white);
-  width: 80%;
+  width: max-content;
   font-size: var(--font-size);
   font-family: var(--font-family);
+}
+
+.table{
+  margin-top: 0.5rem;
+}
+.table,tr,td,th{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td,th{
+  padding: 8px 10px;
+}
+
+.table th{
+  background: darkblue;
+  color: white;
+}
+
+.table tr:nth-child(odd){
+  background-color: lightgray;
+}
+
+.table tr:nth-child(even){
+  background-color: white;
+}
+
+.examples{
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+
+.examples-example{
+  background-color: lightblue;
+  padding: 1rem;
+}
+
+.examples-example h3{
+  color: green;
+}
+
+.examples-example input{
+  padding: 5px 17px;
+  outline: none;
+  margin-top: 10px;
+  margin-right: 10px;
 }
