@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>HTML Form Elements</title>
+</head>
+<body>
+    <div class="container">
+        <section class="section">
+            <h2>Input and Label</h2>
+            <form class="form" action="#" autocomplete="on" novalidate>
+                <div>
+                    <label for="fname">Full Name:</label>
+                    <input type="text" name="fname" id="fname" autocomplete="on"
+                           placeholder="Your Full Name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password"
+                           placeholder="Password">
+                </div>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+        <hr>
+        <section class="section">
+            <h2>The <span>&lt;select&gt;</span> Element</h2>
+            <form action="#" class="form" autocomplete="on" novalidate>
+                <label for="cars">Choose a car:</label>
+                <select name="cars" id="cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                    <option value="chevrolet">Chevrolet</option>
+                </select>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
