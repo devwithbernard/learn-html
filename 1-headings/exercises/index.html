@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Build your headers</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Build Header elements</h1>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <form id="form">
+                <div class="form-item">
+                    <label for="tag" id="tag" class="label">
+                        <select name="tag" id="selected-tag">
+                            <optgroup>
+                                <option value="h1">h1</option>
+                                <option value="h2">h2</option>
+                                <option value="h3">h3</option>
+                                <option value="h4">h4</option>
+                                <option value="h5">h5</option>
+                                <option value="h6">h6</option>
+                            </optgroup>
+                        </select>
+                        <span>Select your tag</span>
+                    </label>
+                </div>
+                <div class="form-item">
+                    <textarea name="tagContent" id="tag-content"></textarea>
+                </div>
+                <button type="submit">Add</button>
+            </form>    
+        </div>
+    </main>
+    <div id="text-container" class="text-container"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
